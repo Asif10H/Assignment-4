@@ -27,8 +27,8 @@
     </header>
 
     <!--Booking Section-->
-    <main class="main-content container">
-        <div class="booking-form">
+    <section class="main-content container" >
+        <div class="booking-form" id="hide-section">
             <h3>Booking Flights</h3>
             <div class="input-group">
                 <label for="">Flying From</label>
@@ -97,9 +97,44 @@
                     </div>
                 </div>
             </div>
-            <button class="btn-style">Book Now</button>
+            <button id="booking-btn" class="btn-style">Book Now</button>
         </div>
+        <!-- order details -->
+        <div id="order-received">
+            <h1>Booking Flights</h1>
+            <br>    
+            <h2>Order received</h2>
+            <p>Thank you.Your order has been received</p>
+            <h1>Order details</h1>
+            <div class="calculations">
+                <div class="amount">
+                    <div class="left">
+                        <p>Subtotal</p>
+                    </div>
+                    <div class="right">
+                        <p id="sub-total-price">$0</p>
+                    </div>
+                </div>
 
+                <div class="amount">
+                    <div class="left">
+                        <p>Charge 10% VAT</p>
+                    </div>
+                    <div class="right">
+                        <p id="vat">$0</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="amount">
+                    <div class="left">
+                        <h4>Total</h4>
+                    </div>
+                    <div class="right">
+                        <p id="total-price">$0</p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="booking-content">
             <h1>discover <br> around the world</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicingelit. Provident voluptatibus quam fuga laborumalias veniam libero autem quasi maxime ullam vero nama imi dolor, architecto ab facilis eaque deserunt nobise voluptatibus quam</p>

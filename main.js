@@ -32,3 +32,14 @@ function priceCalculate(){
     const totalPrice = subtotalPrice + totalVat;
     document.getElementById("total-price").innerText = "$" +  totalPrice;
 }
+// order received
+function orderDetails(){
+    //
+}
+// hide section
+document.getElementById("booking-btn").addEventListener("click", function(){
+    const sectionHide = document.getElementById("hide-section");
+    sectionHide.style.display = "none";
+    const orderReceivedSection = document.getElementById("order-received");
+    orderReceivedSection.style.display = "block";
+})
