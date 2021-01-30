@@ -54,8 +54,8 @@
                     <input id="first-class-count" class="inp-style inp-width" type="number" name="" value="0">
                 </div>
                 <div class="plus-minus-btn">
-                    <p> <span onclick="seatChange('first-class-count', true)"  >+</span> 
-                        <span onclick="seatChange('first-class-count', false)" >-</span> </p> 
+                    <p> <span onclick="seatCount('first-class-count', true)"  >+</span> 
+                        <span onclick="seatCount('first-class-count', false)" >-</span> </p> 
                 </div>
             </div>
             
@@ -65,8 +65,8 @@
                     <input id="economy-count"  class="inp-style inp-width" type="number" name="" value="0">
                 </div>
                 <div class="plus-minus-btn">
-                    <p> <span onclick="seatChange('economy-count', true)"  >+</span> 
-                        <span onclick="seatChange('economy-count', false)" >-</span> </p> 
+                    <p> <span onclick="seatCount('economy-count', true)"  >+</span> 
+                        <span onclick="seatCount('economy-count', false)" >-</span> </p> 
                 </div>
             </div>
             <div class="calculations">
@@ -104,7 +104,8 @@
             <h1>Booking Flights</h1>
             <br>    
             <h2>Order received</h2>
-            <p>Thank you.Your order has been received</p>
+            <p>Thank you.Your order has been received.</p>
+            <br>
             <h1>Order details</h1>
             <div class="calculations">
                 <div class="amount">
@@ -112,7 +113,7 @@
                         <p>Subtotal</p>
                     </div>
                     <div class="right">
-                        <p id="sub-total-price">$0</p>
+                        <p id="order-sub-total-price">$0</p>
                     </div>
                 </div>
 
@@ -121,7 +122,7 @@
                         <p>Charge 10% VAT</p>
                     </div>
                     <div class="right">
-                        <p id="vat">$0</p>
+                        <p id="order-vat">$0</p>
                     </div>
                 </div>
                 <hr>
@@ -130,7 +131,7 @@
                         <h4>Total</h4>
                     </div>
                     <div class="right">
-                        <p id="total-price">$0</p>
+                        <p id="order-total-price">$0</p>
                     </div>
                 </div>
             </div>
